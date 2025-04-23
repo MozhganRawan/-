@@ -1,0 +1,60 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: white;
+    text-align: center;
+  }
+  
+  /* عنوان */
+  header h1 {
+    font-size: 2.2rem;
+    margin: 20px 0;
+    color: #ffcc00;
+    text-shadow: 1px 1px 6px #ffcc00;
+  }
+  
+  /* پرده سینما */
+  .theater-screen {
+    background: linear-gradient(to bottom, #111, #333);
+    border: 10px solid #666;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px #fff, 0 0 20px #ff0;
+  }
+  
+  /* ویدیو */
+  video {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+
+  button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    margin: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 8px #ffcc00;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #000;
+ 
+}
+video {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }

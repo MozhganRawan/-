@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mozhgan Cinema</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <header>
+    <h1>Welcome to Mozhgan'S Cinema  🎬</h1>
+  </header>
+
+  <section class="theater-screen">
+
+    <marquee behavior="alternate" direction="left" scrollamount="10" style="color: rgb(255, 225, 0); font-size: 1.2rem; margin-bottom: 10px;">
+        Now Playing: Mozhgan's Favorite Movie!
+      </marquee>
+
+      <video controls >
+        <source src="media/trailer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
+      <a href="media/trailer.mp4" download style="color: rgb(255, 200, 0);">
+        Download this trailer
+      </a>
+    <div style="margin-top: 15px;">
+        <button onclick="document.querySelector('video').currentTime = 0; document.querySelector('video').play();">
+          Play Again
+        </button>
+      
+        <button onclick="alert('Thanks for rating!')">
+          Rate Movie
+        </button>
+      </div>
+    
+  </section>
+
+  
+
+</body>
+</html>
